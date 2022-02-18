@@ -1,17 +1,15 @@
-import React, { useEffect, useState } from "react";
-import { Link, useParams } from 'react-router-dom';
+import React from "react";
+import { useParams } from 'react-router-dom';
 import { Spinner } from 'react-bootstrap';
-import img from '../images/logo.png';
 import { useSelector } from 'react-redux'
+import ListView from "./ListView";
 
 export default function Region() {
   const { continent } = useParams();
 
   const shops = useSelector(state => state.shops);
   const loading = useSelector(state => state.loading)
-  useEffect(() => {
 
-  }, []);
   if (loading) {
     return <Spinner animation="border" />;
   }
@@ -29,7 +27,7 @@ export default function Region() {
   const uniqueRegions = mapRegionsArr.map(r => <div key={r}>{r}</div>);
 
   return (<>
-    <div>{uniqueRegions}</div>
+    <div className="overflow-auto m-1"> {<ListView placesArr={uniqueRegions} />}</div>
   </>
 
   )

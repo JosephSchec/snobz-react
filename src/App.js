@@ -1,16 +1,16 @@
 import { Navigate, Outlet, Route, Routes } from 'react-router-dom';
 import './App.css';
 import '../src/Styles/styles.scss'
-import TopNavbar from './Components/TopNavbar';
+import TopNavbar from './Components/Navbars/TopNavbar';
 import Map from './Components/Map';
-import BottomNavbar from './Components/BottomNavbar';
-import About from './Components/About';
+import BottomNavbar from './Components/Navbars/BottomNavbar';
+import About from './Components/Offcanvas/About';
 import ShopView from './Components/ShopView';
-import List from './Components/List';
-import Region from './Components/Region';
+import Continents from './Components/List/Continents';
+import Region from './Components/List/Region';
 
 function App() {
-  
+
   return (<>
 
     <TopNavbar />
@@ -18,7 +18,7 @@ function App() {
       <Route index element={<Map center='' />} />
       <Route path='/:value' element={<ShopView />} />
       <Route path='/About' element={<About />} />
-      <Route path='/List' element={<List />} />
+      <Route path='/List' element={<Continents />} />
       <Route path='/List/:continent/Region' element={<Region />} />
       <Route path='*' element={<Navigate to='/' replace='true' />} />
     </Routes>

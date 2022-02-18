@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Container, Button, Image } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
-import img from '../images/logo.png'
+import img from '../../images/logo.png'
 
 export default function About() {
     return (

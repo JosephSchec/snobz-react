@@ -38,7 +38,7 @@ export default function FeedBack(props) {
             >
                 <Modal.Header closeButton>
                     <Modal.Title id="contained-modal-title-vcenter">
-                        Modal heading
+                        Feedback:
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>

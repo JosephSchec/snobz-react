@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import img from '../images/logo.png';
+import img from '../../images/logo.png';
 import { Offcanvas, Nav, Image } from 'react-bootstrap'
 import FeedBack from './FeedBack';
 export default function OffCanvas(props) {
@@ -47,7 +47,7 @@ export default function OffCanvas(props) {
                         </svg>Feedback
                     </Nav.Link>
 
-                    <Nav.Link href="mailto:user@example.com?subject=Sharing the SNOBZ app with you&body=To view SNOBZ on your device, click on https://snobz.vercel.app/" className='fs-2' >
+                    <Nav.Link href="mailto:user@example.com?subject=Sharing the SNOBZ app with you&body=To view SNOBZ on your device, click on https://snobzz.vercel.app/" className='fs-2' >
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                             fill="currentColor" className="bi bi-share mb-1 me-2" viewBox="0 0 16 16">
                             <path
