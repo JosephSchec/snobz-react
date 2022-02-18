@@ -1,0 +1,46 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/_variables";
+
+$theme-colors: (
+    "primary": $indigo-500
+);
+$utilities: (
+  "opacity": (
+    property: opacity,
+    values: (
+      95: .95,
+    )
+  )
+);
+
+a{
+    color: $purple-600 !important;
+};
+.offCanvasImg img{
+    width: 200px;
+}
+
+#root{
+    display: grid;
+    height: 100vh;
+    grid-template-rows:55px 1fr 50px ;
+    overflow: hidden;
+  }
+ 
+  .leaflet-container{
+    width: 100wh; 
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  span {
+    font-size: 1rem;
+  }
+  .listItem{
+    height : '5em';
+    opacity : '.95';
+    cursor : "pointer";
+  }
+@import "~bootstrap/scss/bootstrap";
+
