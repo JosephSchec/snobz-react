@@ -8,6 +8,8 @@ import About from './Components/Offcanvas/About';
 import ShopView from './Components/ShopView';
 import Continents from './Components/List/Continents';
 import Region from './Components/List/Region';
+import Cities from './Components/List/Cities';
+import Shops from './Components/List/Shops';
 
 function App() {
 
@@ -19,7 +21,10 @@ function App() {
       <Route path='/:value' element={<ShopView />} />
       <Route path='/About' element={<About />} />
       <Route path='/List' element={<Continents />} />
-      <Route path='/List/:continent/Region' element={<Region />} />
+      <Route path='/List/:region' element={<Region />} />
+      <Route path='/List/:region/:city' element={<Cities />} />
+      <Route path='/List/:region/:city/:shop' element={<Shops />} />
+
       <Route path='*' element={<Navigate to='/' replace='true' />} />
     </Routes>
     <Outlet />

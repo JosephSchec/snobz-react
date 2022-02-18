@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 import ListView from "./ListView";
 
 export default function Region() {
-  const { continent } = useParams();
+  const { region } = useParams();
 
   const shops = useSelector(state => state.shops);
   const loading = useSelector(state => state.loading)
@@ -20,14 +20,14 @@ export default function Region() {
    * turn set to array for mapping
    ***/
 
-  const regions = shops.filter(inContinentSelected => inContinentSelected.Continent === continent)
+  const regions = shops.filter(inContinentSelected => inContinentSelected.Continent === region)
   const uniqueArr = new Set(regions.map(region => region.Region));
   const mapRegionsArr = [];
   uniqueArr.forEach(region => mapRegionsArr.push(region));
-  const uniqueRegions = mapRegionsArr.map(r => <div key={r}>{r}</div>);
+  
 
   return (<>
-    <div className="overflow-auto m-1"> {<ListView placesArr={uniqueRegions} />}</div>
+    <div className="overflow-auto m-1 list"> {<ListView placesArr={mapRegionsArr} toLink={`List/${region}`} />}</div>
   </>
 
   )
