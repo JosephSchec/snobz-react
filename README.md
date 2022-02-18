@@ -9,7 +9,7 @@ Why is version 3 better than 2?
   * Smoother transition of modals and off-canvases
   * Created with react router 
 
-Technologies(/things) I learned / used when creating version 3 / react:
+Technologies(/things) I learned / used when creating snobz-react:
   *  react-bootstrap
   *  react-leaflet
   *  Bringing up state within functional components
