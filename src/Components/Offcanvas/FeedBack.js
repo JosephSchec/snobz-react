@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Modal, Button, FloatingLabel, Form } from 'react-bootstrap';
-
+import DOMPurify from 'dompurify';
 const password = process.env.REACT_APP_PASS
 
 export default function FeedBack(props) {
@@ -46,7 +46,7 @@ export default function FeedBack(props) {
                         <Form.Control
                             as="textarea"
                             style={{ height: '100px' }}
-                            onChange={e => setMessage(e.target.value)}
+                            onChange={e => setMessage(DOMPurify.sanitize(e.target.value))}
                         />
                     </FloatingLabel>
                 </Modal.Body>

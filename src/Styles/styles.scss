@@ -1,9 +1,13 @@
-@import "bootstrap/scss/functions";
-@import "bootstrap/scss/_variables";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/_variables";
+
 
 $theme-colors: (
-    "primary": $indigo-500
+    "primary": $indigo-500,
+    "light":$red-200
 );
+
+
 $utilities: (
   "opacity": (
     property: opacity,
@@ -12,14 +16,6 @@ $utilities: (
     )
   )
 );
-
-a{
-    color: $purple-600 !important;
-};
-.offCanvasImg img{
-    width: 200px;
-}
-
 #root{
     display: grid;
     height: 100vh;
@@ -34,17 +30,26 @@ a{
     margin: 0;
     padding: 0;
   }
+  a{   
+    color: $purple-600 !important;
+  
+};
+.offCanvasImg img{
+    width: 200px;
+}
   span {
     font-size: 1rem;
   }
   .listItem{
     height : '5em';
     opacity : '.95';
-    cursor : "pointer";
+    cursor: pointer;
   }
   .list{
+    background-color: rgb(247, 243, 243);
       background-image: url('../images/logo.png')
 
   }
-@import "~bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
 

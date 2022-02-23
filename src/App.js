@@ -1,6 +1,6 @@
 import { Navigate, Outlet, Route, Routes } from 'react-router-dom';
 import './App.css';
-import '../src/Styles/styles.scss'
+import '../src/Styles/styles.css'
 import TopNavbar from './Components/Navbars/TopNavbar';
 import Map from './Components/Map';
 import BottomNavbar from './Components/Navbars/BottomNavbar';
