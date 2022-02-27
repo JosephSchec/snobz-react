@@ -24,13 +24,13 @@ body,html{
 #root{
     display: grid;
     height: 100vh;
-    grid-template-rows:60px 7fr 45px ;
+    grid-template-rows:60px 7fr 50px ;
     overflow: hidden;
   }
  
   .leaflet-container{
     width: 100wh; 
-    height: auto;
+    height:100%;
     overflow: hidden;
     margin: 0;
     padding: 0;
