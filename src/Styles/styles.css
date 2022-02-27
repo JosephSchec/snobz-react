@@ -8,7 +8,7 @@ body, html {
 #root {
   display: -ms-grid;
   display: grid;
-  height: 100vh;
+  height: 100%;
   -ms-grid-rows: 60px 7fr 50px;
       grid-template-rows: 60px 7fr 50px;
   overflow: hidden;
