@@ -10,8 +10,8 @@ body, html {
   display: -ms-grid;
   display: grid;
   height: 100vh;
-  -ms-grid-rows: 1fr 8fr 1fr;
-      grid-template-rows: 1fr 8fr 1fr;
+  -ms-grid-rows: 60px 8fr 50px;
+      grid-template-rows: 60px 8fr 50px;
   overflow: hidden;
 }
 
