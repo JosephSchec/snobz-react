@@ -20,11 +20,12 @@ body,html{
   width:100%;
   margin:0;
   padding:0;
+  overflow: hidden;
 }
 #root{
     display: grid;
     height: 100vh;
-    grid-template-rows:1fr 7fr 1fr ;
+    grid-template-rows:1fr 8fr 1fr ;
     overflow: hidden;
   }
  

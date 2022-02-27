@@ -3,14 +3,15 @@ body, html {
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 #root {
   display: -ms-grid;
   display: grid;
   height: 100vh;
-  -ms-grid-rows: 1fr 7fr 1fr;
-      grid-template-rows: 1fr 7fr 1fr;
+  -ms-grid-rows: 1fr 8fr 1fr;
+      grid-template-rows: 1fr 8fr 1fr;
   overflow: hidden;
 }
 
