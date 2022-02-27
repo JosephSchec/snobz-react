@@ -9,13 +9,14 @@ body, html {
   display: -ms-grid;
   display: grid;
   height: 100vh;
-  -ms-grid-rows: 60px 7fr 45px 1px;
-      grid-template-rows: 60px 7fr 45px 1px;
+  -ms-grid-rows: 60px 7fr 45px;
+      grid-template-rows: 60px 7fr 45px;
   overflow: hidden;
 }
 
 .leaflet-container {
   width: 100wh;
+  height: auto;
   overflow: hidden;
   margin: 0;
   padding: 0;
