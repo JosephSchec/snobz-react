@@ -5,7 +5,7 @@ export default function BottomNavbar() {
 
     return (
         <>
-            <Navbar bg="light" variant="light" className='m-0'expand={false}>
+            <Navbar bg="light" variant="light" className='m-0'>
                 <Container>
                     <Nav className="me-auto col-12 justify-content-center">
                         <Nav.Link href="/" className='col-6 text-center '><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
