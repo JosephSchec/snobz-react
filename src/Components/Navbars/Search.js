@@ -10,7 +10,7 @@ export default function Search() {
     const navigate = useNavigate();
     const [value, setValue] = useState('');
     return (
-        <Form className="d-flex  ">
+        <Form className=" me-2 m-sm-0 d-none d-sm-flex">
             <FormControl
                 type="search"
                 placeholder="Search Region, City or Shop"
