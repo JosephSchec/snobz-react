@@ -6,8 +6,8 @@ import img from '../../images/logo.png'
 export default function About() {
     return (
         <>
-            <Container fluid>
-                <Row className='justify-content-center'>
+            <Container fluid className='overflow-auto'>
+                <Row className='justify-content-center '>
                     <Image src={img} alt='logo' className='m-sm-0 mt-sm-5 m-lg-5 p-sm-0 p-lg-5 col-md-6 col-lg-4'
                         style={{
                             filter: "drop-shadow(-7px 4px 4px #656178)"
