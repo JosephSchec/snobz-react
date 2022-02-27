@@ -9,8 +9,8 @@ body, html {
   display: -ms-grid;
   display: grid;
   height: 100vh;
-  -ms-grid-rows: 60px 8fr 50px;
-      grid-template-rows: 60px 8fr 50px;
+  -ms-grid-rows: 60px 7fr 45px;
+      grid-template-rows: 60px 7fr 45px;
   overflow: hidden;
 }
 
