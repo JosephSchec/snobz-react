@@ -1,5 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import { Navigate, Outlet, Route, Routes } from 'react-router-dom';
+import {  Spinner } from 'react-bootstrap'
+
 import './App.css';
 import '../src/Styles/styles.css'
 import TopNavbar from './Components/Navbars/TopNavbar';
@@ -22,11 +24,11 @@ function App() {
     <TopNavbar />
     <Routes>
       <Route index element={<Map center='' />} />
-      <Route path='/:value' element={<Suspense fallback={<div>Loading...</div>}><ShopView /></Suspense>} />
+      <Route path='/:value' element={<Suspense fallback={<Spinner animation="border" />}><ShopView /></Suspense>} />
 
-      <Route path='/About' element={<Suspense fallback={<div>Loading...</div>}><About /></Suspense>} />
+      <Route path='/About' element={<Suspense fallback={<Spinner animation="border" />}><About /></Suspense>} />
 
-      <Route path='/List' element={<Suspense fallback={<div>Loading...</div>}><Continents /></Suspense>} />
+      <Route path='/List' element={<Suspense fallback={<Spinner animation="border" />}><Continents /></Suspense>} />
       <Route path='/List/:region' element={<Region />} />
       <Route path='/List/:region/:city' element={<Cities />} />
       <Route path='/List/:region/:city/:shop' element={<Shops />} />
