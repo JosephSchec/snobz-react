@@ -26,7 +26,7 @@ export default function ChangeMapView(props) {
         } else if (newView !== center) {
             setCenter(newView);
         }
-    }, [newView,center])
+    }, [])
     const map = useMap();
     if (centerChanged) {
         map.setView(center, 8);

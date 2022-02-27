@@ -23,7 +23,7 @@ export default function OffCanvas(props) {
                 <div className='container d-flex justify-content-center offCanvasImg'>
                     <Image src={img} alt='logo' className='' />
                 </div>
-                <Nav defaultActiveKey="/home" className="flex-column">
+                <Nav defaultActiveKey="/" className="flex-column">
                     <Nav.Link href='/' className='fs-2'><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                         fill="currentColor" className="bi bi-house mb-1 me-2" viewBox="0 0 16 16">
                         <path fillRule="evenodd"
