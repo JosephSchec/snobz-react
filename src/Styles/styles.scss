@@ -15,10 +15,16 @@ $utilities: (
     )
   )
 );
+body,html{
+  height:100%;
+  width:100%;
+  margin:0;
+  padding:0;
+}
 #root{
     display: grid;
     height: 100vh;
-    grid-template-rows:1fr 8fr 1fr ;
+    grid-template-rows:1fr 7fr 1fr ;
     overflow: hidden;
   }
  
