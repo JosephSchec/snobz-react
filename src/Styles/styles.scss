@@ -16,7 +16,7 @@ $utilities: (
   )
 );
 body,html{
-  height:100vh;
+  height:100%;
   width:100%;
   margin:0;
   padding:0;
@@ -30,7 +30,6 @@ body,html{
  
   .leaflet-container{
     width: 100wh; 
-    height:100%;
     overflow: hidden;
     margin: 0;
     padding: 0;
