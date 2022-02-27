@@ -24,7 +24,7 @@ body,html{
 #root{
     display: grid;
     height: 100vh;
-    grid-template-rows:minmax(60px,1fr) 8fr minmax(50px,1fr)  ;
+    grid-template-rows:60px 8fr 50px  ;
     overflow: hidden;
   }
  
