@@ -16,6 +16,7 @@ export default function Search() {
                 placeholder="Search Region, City or Shop"
                 className="me-sm-0 me-md-3"
                 aria-label="Search"
+                style={{boxShadow:'none'}}
                 onChange={e => setValue(e.currentTarget.value)}
                 onKeyDown={e => {
                     if (e.key === 'Enter') {
@@ -24,7 +25,7 @@ export default function Search() {
                 }}
             />
             <Link to={`/${value}`}>
-                <Button variant="primary" >Search</Button>
+                <Button variant="primary" style={{boxShadow:'none'}}>Search</Button>
             </Link>
         </Form>
     )

@@ -11,7 +11,7 @@ export default function TopNavbar() {
     <>
       <Navbar bg="light" expand={false} >
         <Container fluid>
-          <Button onClick={() => setShow(!show)}>
+          <Button onClick={() => setShow(!show)}style={{boxShadow:'none'}}>
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20"
               fill="currentColor" className="bi bi-filter-left" viewBox="0 0 16 16">
               <path
