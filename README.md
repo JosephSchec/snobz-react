@@ -20,3 +20,4 @@ Technologies(/things) I learned / used when creating snobz-react:
   *  How to use .env in react
   *  Bit of sass (.scss) and manipulating bootstrap defaults
   *  Lazy Loading React  
+  * Started keeping track of versions

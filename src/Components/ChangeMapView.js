@@ -13,18 +13,20 @@ export default function ChangeMapView(props) {
 
     function getCurr() {
         navigator.geolocation.getCurrentPosition(changeView);
-       
+
     }
 
     function changeView(pos) {
-        setCenter([pos.coords.latitude, pos.coords.longitude]); 
+        setCenter([pos.coords.latitude, pos.coords.longitude]);
         setCenterChanged(true);
     }
     useEffect(() => {
         if (newView === '' || newView === null || newView === undefined) {
-           getCurr();
+            getCurr();
         } else if (newView !== center) {
             setCenter(newView);
+            setCenterChanged(true);
+
         }
     }, [])
     const map = useMap();
