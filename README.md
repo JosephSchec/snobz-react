@@ -1,5 +1,5 @@
 ## SNOBZ_React
-Based on Snobz 2 Snobz React allowed me to practice useing react components 
+Based on Snobz 2 Snobz React allowed me to practice using react components 
 
 ### - visit [Snobzz](snobzz.vercel.app)
 
