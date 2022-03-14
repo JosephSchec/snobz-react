@@ -17,7 +17,7 @@ export default function MyMarker(props) {
             eventHandlers={{
                 click: clicked
             }} >
-            <Tooltip direction="top" offset={[12, 15]}  >{placeHolder}</Tooltip>
+            <Tooltip direction="top" >{placeHolder}</Tooltip>
         </Marker>
     </>
     )

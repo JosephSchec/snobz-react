@@ -2,14 +2,16 @@ import React from 'react';
 import { MapContainer, TileLayer } from 'react-leaflet'
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import icon from 'leaflet/dist/images/marker-icon.png';
-import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+//import icon from 'leaflet/dist/images/marker-icon.png';
+//import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+import marker from '../images/marker.png'
 import ChangeMapView from './ChangeMapView';
 import AllMarkers from './AllMarkers';
 
 let DefaultIcon = L.icon({
-    iconUrl: icon,
-    shadowUrl: iconShadow
+    iconUrl: marker,
+    iconSize:[35,60]
+   // shadowUrl: iconShadow
 });
 
 L.Marker.prototype.options.icon = DefaultIcon;
