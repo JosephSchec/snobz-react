@@ -27,6 +27,11 @@ html {
   position: absolute;
 }
 
+.map {
+  height: 100%;
+  width: 100%;
+}
+
 a {
   color: #59359a !important;
 }

@@ -25,7 +25,7 @@ export default function Map(props) {
 
 
     return (<>
-        <MapContainer
+        <MapContainer className='map'
             maxBounds={bounds}
             minZoom={3}
             scrollWheelZoom={true} >
