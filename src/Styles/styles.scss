@@ -32,6 +32,12 @@ html {
   padding: 0;
 }
 
+.leaflet-pane {
+  img {
+    position: absolute;
+  }
+}
+
 a {
   color: $purple-600 !important;
 
