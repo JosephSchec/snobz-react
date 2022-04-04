@@ -17,8 +17,9 @@ import fetchShops from './redux/actions/FetchData';
  * provider => allows the store to be used in app
  * thunk => library allowing for async call in middleware
  */
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)));
+//const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+//const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)));
+const store = createStore(reducer, compose(applyMiddleware(thunk)));
 store.dispatch(fetchShops())
 ReactDOM.render(
 

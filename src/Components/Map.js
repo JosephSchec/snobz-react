@@ -10,7 +10,7 @@ import AllMarkers from './AllMarkers';
 
 let DefaultIcon = L.icon({
     iconUrl: marker,
-    iconSize:[35,60]
+    iconSize:[30,50]
    // shadowUrl: iconShadow
 });
 
