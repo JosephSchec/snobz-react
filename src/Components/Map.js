@@ -25,10 +25,11 @@ export default function Map(props) {
 
 
     return (<>
-        <MapContainer className='map'
+        <MapContainer 
             maxBounds={bounds}
             minZoom={3}
-            scrollWheelZoom={true} >
+            scrollWheelZoom={true} 
+            style={{ height: '100%', width: '100%' }} >
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' noWrap='true'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
