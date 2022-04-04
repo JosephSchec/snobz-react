@@ -2,57 +2,60 @@
 @import "../../node_modules/bootstrap/scss/_variables";
 
 
-$theme-colors: (
-    "primary": $indigo-500
-);
+$theme-colors: ("primary": $indigo-500);
 
 
-$utilities: (
-  "opacity": (
-    property: opacity,
-    values: (
-      95: .95,
-    )
-  )
-);
-body,html{
-  height:100%;
-  width:100%;
-  margin:0;
-  padding:0;
+$utilities: ("opacity": (property: opacity,
+    values: (95: .95,
+    )));
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
-#root{
-    display: grid;
-    height: 100%;
-    grid-template-rows:60px 7fr 50px ;
-    overflow: hidden;
-  }
- 
-  .leaflet-container{
-    width: 100wh; 
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-  }
-  a{   
-    color: $purple-600 !important;
-  
-};
-.offCanvasImg img{
-    width: 200px;
-}
-  span {
-    font-size: 1rem;
-  }
-  .listItem{
-    height : '5em';
-    opacity : '.95';
-    cursor: pointer;
-  }
-  .list{
-    background-color: rgb(247, 243, 243);
-      background-image: url('../images/logo.png')
 
-  }
+#root {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 60px 7fr 50px;
+  overflow: hidden;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $purple-600 !important;
+
+}
+
+;
+
+.offCanvasImg img {
+  width: 200px;
+}
+
+span {
+  font-size: 1rem;
+}
+
+.listItem {
+  height: '5em';
+  opacity: '.95';
+  cursor: pointer;
+}
+
+.list {
+  background-color: rgb(247, 243, 243);
+  background-image: url('../images/logo.png')
+}
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
-
