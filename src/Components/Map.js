@@ -29,7 +29,7 @@ export default function Map(props) {
             maxBounds={bounds}
             minZoom={3}
             scrollWheelZoom={true} 
-            style={{ height: '100%', width: '100%' }} >
+            style={{ height: '100vh', width: '100vw' }} >
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' noWrap='true'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
