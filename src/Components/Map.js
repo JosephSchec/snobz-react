@@ -10,8 +10,8 @@ import AllMarkers from './AllMarkers';
 
 let DefaultIcon = L.icon({
     iconUrl: marker,
-    iconSize:[30,50]
-   // shadowUrl: iconShadow
+    iconSize: [30, 50]
+    // shadowUrl: iconShadow
 });
 
 L.Marker.prototype.options.icon = DefaultIcon;
@@ -25,11 +25,11 @@ export default function Map(props) {
 
 
     return (<>
-        <MapContainer 
+        <MapContainer
             maxBounds={bounds}
             minZoom={3}
-            scrollWheelZoom={true} 
-            style={{ height: '100vh', width: '100vw' }} >
+            scrollWheelZoom={true}
+            style={{ height: '100%', width: '100vw' }} >
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' noWrap='true'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
