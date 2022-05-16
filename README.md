@@ -13,11 +13,11 @@ Based on Snobz 2 Snobz React allowed me to practice using react components
 #### Technologies(/things) I learned / used when creating snobz-react:
   *  DOMPurify feedback
   *  react-bootstrap
-  *  react-leaflet
+  *  react-leaflet {set map height:100% and width:100vw and loading is more reliable}
   *  Bringing up state within functional components
   *  Axios - fetch async in redux
   *  Redux 
   *  How to use .env in react
   *  Bit of sass (.scss) and manipulating bootstrap defaults
   *  Lazy Loading React  
-  * Started keeping track of versions
+  *  Started keeping track of versions
